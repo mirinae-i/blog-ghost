@@ -13,8 +13,7 @@ services:
       - database__connection__user=root
       - database__connection__password=!secret      # TODO: change this password
       - database__connection__database=blog-ghost
-      - url=http://blog.localhost
-      - NODE_ENV=development
+      - url=http://blog.my-domain                   # TODO: change this url
     volumes:
       - app:/var/lib/ghost/content
     depends_on:
